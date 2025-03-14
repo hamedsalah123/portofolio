@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+    <style>
+        div{
+            display: flex;
+            flex-direction: column;
+            background: darkolivegreen;
+            max-width: 250px;
+            margin-left: 12%;
+            margin-top: 12%;
+        }
+        div input{
+            width:200px;
+            margin-left: 5px;
+            border-radius: 100px;
+            margin-top: 9px;
+            padding: 10px;
+            margin-bottom: 9px;
+        }
+        div img{
+            width: 200px;
+            border-radius: 100px;
+            padding-bottom: 5px;
+            margin-left: 5px;
+        }
+        button{
+            width: 50px;
+            margin-left: 9px;
+        }
+       
+       #h{
+        margin-bottom: 7px;
+        padding: 5px;
+        background: darkkhaki;
+        padding-right: 50px;
+        
+       } 
+        .ht{
+          display: grid;
+          grid-template-columns: repeat(2,1fr);
+          width: 200px;
+          
+        }
+        #operators{
+        margin-bottom: 7px;
+        padding: 5px;
+        background: darkkhaki;
+        width: 50px;
+        margin-left: 50px;
+    
+        }
+        body{
+            background: darkgoldenrod;
+        }
+
+    </style>
+</head>
+<body>
+    <div>
+        <img src="../doctype4/img/avatar.jpg" alt="">
+        <input type="text" id="n1">
+        <input type="text" id="n2">
+        <input type="text" id="result">
+        <div class="ht">
+        <button type="button" id="h" onclick="Calculate();">=</button>
+        <select id="operators">
+            <option value="+">+</option>
+            <option value="-">-</option>
+            <option value="/">/</option>
+            <option value="*">*</option>
+        </select>
+        </div>
+    </div>
+    <script>
+        function  Calculate(){
+            var n1= Number(document.getElementById("n1").value);
+            var n2= parseInt(document.getElementById("n2").value);
+            var oper=document.getElementById("operators").value;
+            if(oper==='+'){
+                document.getElementById("result").value=n1+n2;
+            }
+            if(oper==='-'){
+                document.getElementById("result").value=n1-n2;
+            }
+            if(oper==='/'){
+                document.getElementById("result").value=n1/n2;
+            }
+            if(oper==='*'){
+                document.getElementById("result").value=n1*n2;
+            }
+        }
+       
+    </script>
+</body>
+</html>

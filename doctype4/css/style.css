@@ -1,0 +1,47 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo+Play:wght@200..1000&family=Cairo:wght@200..1000&display=swap');
+body{
+    font-family: "Cairo", serif;
+}
+
+.nav-item:hover{
+    border-bottom: 4px solid gray !important;
+}
+
+.hamed{
+    height: 500px;
+    width: 100%;
+    background-image: url("../img/fg.jpg");
+    background-position: center left;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hamed div{
+    position: relative;
+    padding-right: 34%;
+    top: 20%;
+
+}
+.hamed div p{
+    font-size: 22px;
+    color: white;
+}
+.rty img{
+width: 100%;
+height: 500px;
+}
+
+footer ul li a{
+    text-decoration: none;
+    color: white;
+}
+footer ul li{
+    list-style: none;
+}
+.name{
+    text-align: center;
+    background: gray;
+}
+main img{
+    border-radius: 100px;
+}
